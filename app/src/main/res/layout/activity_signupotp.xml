@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Signupotp"
+    android:gravity="center"
+    android:background="#fff">
+
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="10dp"
+        android:text="Mobile Number Verification"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtmobile"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/txt"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/edt_border"
+        android:textColor="#000"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:inputType="number"
+        android:hint="Mobile Phone"
+        />
+
+    <EditText
+        android:id="@+id/edtotp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/edtmobile"
+        android:hint="Otp"
+        android:visibility="visible"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/edt_border"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        />
+
+    <Button
+        android:id="@+id/btngetotp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/edtotp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_round"
+        android:layout_marginTop="10dp"
+        android:text="Get OTP"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"/>
+
+
+</RelativeLayout>

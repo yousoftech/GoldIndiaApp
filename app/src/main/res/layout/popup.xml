@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    >
+    <Button
+        android:id="@+id/cancel"
+        android:background="@drawable/ic_cancel_black_24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+    <TextView
+        android:id="@+id/text"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sell Details"
+        />
+    <AutoCompleteTextView
+        android:id="@+id/txtname"
+        android:hint="Party Name"
+        android:layout_below="@id/text"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtunit"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtname"
+        android:layout_width="match_parent"
+        android:hint="units"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:textColor="#fff"
+        android:text="SELL"
+        android:id="@+id/btnconfirm"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_round"
+        android:layout_below="@id/txtunit"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Login"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="10dp"
+        android:text="Log In"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtuid"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/txt"
+        android:layout_marginTop="10dp"
+        android:lines="1"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/edt_border"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="User Id"
+        />
+
+    <EditText
+        android:id="@+id/edtpass"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/edtuid"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:imeOptions="actionGo"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/edt_border"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/edtpass"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_round"
+        android:layout_marginTop="10dp"
+        android:text="Log In"
+        android:textColor="#fff"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"/>
+    <Button
+        android:id="@+id/btnrepass"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:textAlignment="center"
+        android:paddingTop="6dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000"
+        android:text="Forgot Password"
+        android:layout_below="@id/btnlogin"/>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="OR"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnrepass"/>
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/txt2"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_round"
+        android:layout_marginTop="10dp"
+        android:text="Sign Up"
+        android:textColor="#fff"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"/>
+
+
+</RelativeLayout>

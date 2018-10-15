@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Signup"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="#fff">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginBottom="10dp"
+                android:text="Registration"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edtname"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/txt"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/edt_border"
+                android:layout_marginRight="40dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Name"
+                />
+
+            <TextView
+                android:id="@+id/edtmobile"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/edtname"
+                android:hint="Mobile Number"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/edt_border"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="phone"/>
+
+            <EditText
+                android:id="@+id/edtemail"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/edtmobile"
+                android:hint="Email"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/edt_border"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/edtpass"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/edtemail"
+                android:hint="Password"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/edt_border"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="textVisiblePassword"/>
+
+            <Button
+                android:id="@+id/btnsubmit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/edtpass"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_round"
+                android:layout_marginTop="10dp"
+                android:text="Submit"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="60dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/edtsearch"
+                    android:hint="SEARCH"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:textAllCaps="true"
+                    android:layout_margin="20dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btnsearch"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_search_black_24dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignEnd="@id/edtsearch"
+                    android:layout_alignRight="@id/edtsearch" />
+            </RelativeLayout>
+
+
+
+
+</android.support.v7.widget.Toolbar>

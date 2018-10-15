@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.searchdata"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/mainrel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b8000000"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+    <include
+        layout="@layout/searchbar"
+        android:id="@+id/searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <ScrollView
+        android:layout_below="@id/searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="195dp"
+                />
+
+            <!--android:background="@drawable/ic_try"-->
+            <RelativeLayout
+                android:layout_below="@id/img1"
+                android:id="@+id/l1"
+                android:layout_width="230dp"
+                android:paddingLeft="70dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textAllCaps="true"
+                    android:text="PRODUCT NO  "
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:text=":"
+                    android:layout_margin="5dp"
+                    android:textColor="#000"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_below="@id/txt1"
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textAllCaps="true"
+                    android:text="QUANTITY"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_below="@id/txt1"
+                    android:text=":"
+                    android:layout_margin="5dp"
+                    android:textColor="#000"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_below="@id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="PRICE"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_below="@id/txt2"
+                    android:text=":"
+                    android:layout_margin="5dp"
+                    android:textColor="#000"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_below="@id/txt3"
+                    android:id="@+id/txt4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="WARE HOUSE"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+
+                <TextView
+                    android:layout_below="@id/txt3"
+                    android:text=":"
+                    android:layout_margin="5dp"
+                    android:textColor="#000"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_below="@id/img1"
+                android:id="@+id/l2"
+                android:paddingRight="70dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true">
+
+                <TextView
+                    android:id="@+id/pguid"
+                    android:visibility="invisible"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+                <TextView
+                    android:id="@+id/name"
+                    android:text="1001"
+                    android:textColor="#000"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAllCaps="true"
+                    android:text="100000"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 100000"
+                    android:textColor="#000"
+                    android:layout_below="@id/qty"
+                    android:layout_marginTop="5dp"
+                    android:textAllCaps="true"
+                    android:layout_marginBottom="5dp"/>
+
+
+                <TextView
+                    android:layout_below="@id/price"
+                    android:id="@+id/warehouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MAIN"
+                    android:textColor="#000"
+                    android:layout_marginTop="5dp"
+                    android:textAllCaps="true"
+                    android:layout_marginBottom="5dp"/>
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btnsell"
+                android:text="SELL"
+                android:layout_below="@id/l1"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_round"
+                android:layout_marginBottom="5dp"
+                android:layout_width="70dp"
+                android:layout_height="25dp" />
+
+            <Button
+                android:id="@+id/btnorder"
+                android:text="ORDER"
+                android:layout_below="@id/l2"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_round"
+                android:layout_marginBottom="5dp"
+                android:layout_width="70dp"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_centerInParent="true"
+                android:textAllCaps="true"
+                android:text="No Product Found...."/>
+        </RelativeLayout>
+
+    </ScrollView
+        >
+
+</RelativeLayout>
